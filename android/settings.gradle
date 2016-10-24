@@ -1,0 +1,17 @@
+rootProject.name = 'IrrigatorAPP'
+
+include ':app'
+include ':react-native-orientation'
+project(':react-native-orientation').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-orientation/android')
+include ':react-native-mp-android-chart'
+project(':react-native-mp-android-chart').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-mp-android-chart/android')
+
+//Added the following two lines:
+include ':react-native-vector-icons'
+project(':react-native-vector-icons').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-vector-icons/android')
+
+include ':reactNativeMPAndroidChart'
+project(':reactNativeMPAndroidChart').projectDir = new File(
+  rootProject.projectDir,
+  '../node_modules/react-native-mp-android-chart/android'
+)
